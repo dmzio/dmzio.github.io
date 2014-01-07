@@ -1,0 +1,25 @@
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="https://bitbucket.org/zio/bibtex-js/raw/04cb38f2f477c3315c1b9cf597ae2b17e7ab4a6b/src/bibtex_js.js"></script>
+<script type="text/javascript" >
+
+$(function() {
+
+$.get('/data/uploads/zio.bib', function(data) {
+$('#bibtex_input').val(data);
+bibtex_js_draw();
+});
+
+
+});
+
+</script>
+
+<textarea id="bibtex_input" style="display:none;">
+@book{book1,
+  author = "Donald Knuth",
+  title = "Concrete Mathematics"
+}
+</textarea>
+
+
+<div id="bibtex_display"></div>
