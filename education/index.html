@@ -6,10 +6,45 @@ title: Educational activities
 
 <div class="row">
 
-Diploma works
+    <div class="col-md-3">
 
-Courses
+        <div id="main-menu" class="hidden-print list-group" data-spy="affix" data-offset-top="150"
+             data-offset-bottom="200">
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#thesises">Diploma works</a></li>
+            </ul>
 
+        </div>
+    </div>
+
+    <div class="col-md-9">
+        <section class="well">
+            <h2 id="courses">Courses</h2>
+
+            Physical methods in Chemistry
+
+            Quantum Chemistry
+
+            Cheminformatics for the drug discovery
+
+        </section>
+        <section class="well">
+            <h2 id="thesises">Diploma works</h2>
+
+            <ul>
+                {% for dipl in site.data.supervision.diploma %}
+                <li>
+                    <strong>{{ dipl.name }}</strong> — "{{ dipl.work_name }}", <em>({{ dipl.year }}, {{ dipl.degree
+                    }})</em>
+                </li>
+                {% endfor %}
+            </ul>
+
+        </section>
+
+
+    </div>
 
 
 </div>
