@@ -20,23 +20,53 @@ title: Educational activities
 
     <div class="col-md-9">
         <section class="well">
-            <h2 id="courses">Courses</h2>
+            <h2 id="courses">Lecture Courses</h2>
 
-            Physical methods in Chemistry
+            <div>
+                <h3>Quantum Chemistry <span class="label label-default">2008 - present time</span></h3>
+                <p>Course for the students of the school of Radiophysics of Karazin Kharkov national University.</p>
+                <p>Focuses on the basics of Quantum Mechanics and Quantum Chemistry for understanding of the main principles
+                of the modern computational chemistry methods.</p>
+                <p>Practical tasks during the classes helps to learn how to choose appropriate method for the particular
+                tasks and how to interpret results of calculations.</p>
+            </div>
 
-            Quantum Chemistry
+            <div>
+                <h3>Cheminformatics for the drug discovery <span class="label label-default">2013 - present time</span></h3>
+                <p>Course for the students of the school of Chemistry (specialisation "Pharmaceutical Chemistry")</p>
+                <p>Describes, helps to understand, use properly and develop:</p>
+                <ul>
+                    <li>storing and managing chemical data</li>
+                    <li>molecular descriptors and QSPR models</li>
+                    <li>molecular docking and virtual screening tools</li>
+                </ul>
+            </div>
 
-            Cheminformatics for the drug discovery
+
+            <div>
+                <h3>Physical methods in Chemistry <span class="label label-default">2010 - 2012</span></h3>
+                <p>Course for the students of the Chemical department, describes main principles of the various
+                spectroscopy methods on the base of understanding how matter interacts with the radiation.</p>
+                <ul>
+                    <li>basic principles of radiation-matter interaction and spectroscopy</li>
+                    <li>mass-spectrometry</li>
+                    <li>Vibrational spectroscopy</li>
+                    <li>Infrared and Raman spectroscopy</li>
+                    <li>Electronic (UV/VIS, fluorescence) spectroscopy </li>
+                    <li>NMR and ESR methods</li>
+                    <li>Moessbauer spectroscopy</li>
+                </ul>
+            </div>
+
 
         </section>
         <section class="well">
-            <h2 id="thesises">Diploma works</h2>
+            <h2 id="thesises">Diploma works supervision</h2>
 
             <ul>
                 {% for dipl in site.data.supervision.diploma %}
                 <li>
-                    <strong>{{ dipl.name }}</strong> — "{{ dipl.work_name }}", <em>({{ dipl.year }}, {{ dipl.degree
-                    }})</em>
+                    <strong>{{ dipl.name }}</strong> — "{{ dipl.work_name }}", <em>({{ dipl.year }}, {{ dipl.degree }})</em>
                 </li>
                 {% endfor %}
             </ul>
