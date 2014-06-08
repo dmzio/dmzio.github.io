@@ -2,12 +2,12 @@ diploma:
 
 
   - name: Anastasia Nikitina
-    year: in progress
+    year: 2014
     work_name: Search of the potential inhibitors of the 11-&beta;-HSD1 by means of the virtual screening
     degree: Specialist
 
   - name: Irina Fadeeva
-    year: in progress
+    year: 2014
     work_name: Optimization of the layout and data processing of the CCD-based spectrometer
     degree: Master of science
 
@@ -26,7 +26,7 @@ diploma:
     work_name: Anion-radical salts of TCNQ with cations on the basis of Quinoxaline and Quinoxalinol
     degree: Specialist
 
-#  - name: Julia Lozovskaya
-#    year: 2010
-#    work_name:
-#    degree: Specialist
+  - name: Julia Lozovskaya
+    year: 2010
+    work_name: Synthesys and properties of the new cation-radical salts on the fullerene C<sub>60</sub> base
+    degree: Specialist
