@@ -1,0 +1,101 @@
+body {
+    padding-bottom: 55px;
+}
+
+/* for static navbar at bottom */
+#footer-nav {
+    padding: 5px;
+}
+
+body {
+    background-image: url("/img/bg1.jpg");
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.well {
+    background-image: linear-gradient(to bottom, rgba(47, 37, 59, 0.1) 0, rgba(47, 37, 59, 0.2) 100%);
+    background-repeat: repeat-x;
+    border-color: #dcdcdc;
+}
+
+.well li, .well dt, .well dd {
+    margin-bottom: 0.3em;
+}
+
+/* By default it's not affixed in mobile views, so undo that */
+.affix {
+    /* position: static; */
+}
+
+@media (min-width: 992px) {
+    .affix {
+        position: fixed; /* Undo the static from mobile first approach */
+    }
+
+    .affix, .affix-bottom {
+
+        width: 213px;
+        top: 10px;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .affix-bottom, .affix {
+        width: 263px;
+    }
+}
+
+/* Index page */
+
+.jumbotron h1, h1 {
+    font-family: 'Federo', sans-serif;
+    text-shadow: 2px 3px 0.3em #fff;
+    color: rgb(90, 72, 109);
+}
+
+.jumbotron {
+    background-color: rgba(47, 37, 59, 0.3);
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+#main-thumbnails {
+    overflow: hidden;
+}
+
+#main-thumbnails h2 {
+    text-shadow: 1px 2px 1em #fff;
+    background-color: rgba(250, 250, 250, 0.6);
+    padding: 0.5em;
+
+}
+
+#main-thumbnails [class*="col-"] {
+    height: 350px;
+}
+
+#main-thumbnails #science, #main-thumbnails #development, #main-thumbnails #education {
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+    background-position: center;
+    padding: 5%;
+
+}
+
+#main-thumbnails #science {
+    background-image: url("/img/mol.jpg");
+
+}
+
+#main-thumbnails #development {
+    background-image: url("/img/code.jpg");
+
+}
+
+#main-thumbnails #education {
+    background-image: url("/img/edu.jpg");
+
+}
